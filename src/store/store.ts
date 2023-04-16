@@ -13,10 +13,10 @@ export interface ShopProduct {
     id: number,
     name: string,
     price: number,
-    quantitiy: number,
     image: string,
     starRate: number,
     description: string,
+    quantity: number
 }
 
 export interface products {
@@ -27,32 +27,42 @@ export interface products {
     image: string,
     starRate: number,
     description: string,
+    quantity: number
 }
 
 export const products: products[] = [
-    { id: 1, name: 'Airpods Max', price: 59.00, isFav: false, image: AirpodMax, starRate: 121, description: 'A perfect balance of high-fidelity audio'},
-    { id: 2, name: 'Laptop Sleeve MacBook', price: 59.00, isFav: false, image: LeptopSleeveMacbook, starRate: 121, description: 'Organic Cotton, fairtrade certified'},
-    { id: 3, name: 'MacBook Pro 13"', price: 1099.00, isFav: false, image: Macbook13, starRate: 121, description: '256, 8 core GPU, 8 GB'},
-    { id: 4, name: 'HomePod Mini', price: 59.00, isFav: false, image: HomepadMini, starRate: 121, description: '5 Colors Available'},
-    { id: 5, name: 'Ipad Mini', price: 532.00, isFav: false, image: iPadMini, starRate: 121, description: 'Table with air purifier, stained veneer/black'},
-    { id: 6, name: 'Supreme Water Bottle', price: 19.00, isFav: false, image: WaterPot, starRate: 121, description: 'Table with air purifier, stained veneer/black'},
-    { id: 7, name: 'Flower Laptop Sleeve', price: 39.00, isFav: false, image: FlowerLeptopSleeve, starRate: 121, description: '15 in. x 10 in. -Flap top closure'},
-    { id: 8, name: 'Laptop Sleeve MacBook', price: 59.00, isFav: false, image: LeptopSleeve, starRate: 121, description: 'Organic Cotton, fairtrade certified'},
+    { id: 1, name: 'Airpods Max', price: 59.00, isFav: false, image: AirpodMax, starRate: 121, description: 'A perfect balance of high-fidelity audio', quantity: 1 },
+    { id: 2, name: 'Laptop Sleeve MacBook', price: 59.00, isFav: false, image: LeptopSleeveMacbook, starRate: 121, description: 'Organic Cotton, fairtrade certified', quantity: 1 },
+    { id: 3, name: 'MacBook Pro 13"', price: 1099.00, isFav: false, image: Macbook13, starRate: 121, description: '256, 8 core GPU, 8 GB', quantity: 1 },
+    { id: 4, name: 'HomePod Mini', price: 59.00, isFav: false, image: HomepadMini, starRate: 121, description: '5 Colors Available', quantity: 1 },
+    { id: 5, name: 'Ipad Mini', price: 532.00, isFav: false, image: iPadMini, starRate: 121, description: 'Table with air purifier, stained veneer/black', quantity: 1 },
+    { id: 6, name: 'Supreme Water Bottle', price: 19.00, isFav: false, image: WaterPot, starRate: 121, description: 'Table with air purifier, stained veneer/black', quantity: 1 },
+    { id: 7, name: 'Flower Laptop Sleeve', price: 39.00, isFav: false, image: FlowerLeptopSleeve, starRate: 121, description: '15 in. x 10 in. -Flap top closure', quantity: 1 },
+    { id: 8, name: 'Laptop Sleeve MacBook', price: 59.00, isFav: false, image: LeptopSleeve, starRate: 121, description: 'Organic Cotton, fairtrade certified', quantity: 1 },
 ]
 
 
 export const cart = defineStore({
     id: 'cart',
     state: () => ({
-        items: [] as ShopProduct[]
+        items: [] as ShopProduct[],
+        
     }),
     actions: {
-        productToAdd(product:object) {
-            console.log(product)
-        }
+        productToAdd(product: any) {
+            const foundIndex = this.items.findIndex(item => item.id === product.id);
+            console.log(foundIndex)
+            if (foundIndex === -1) {
+                this.items.push(product)
+            } else {
+                this.items[foundIndex].quantity++;
+            }            
+        },
 
-        // const productToAdd = { id: 'p1', name: 'Product 1', price: 9.99, quantity: 1 };
-        // cart.addItem(productToAdd);
-        // cart.removeItem(productToRemove);
-    }
+        productDelete(item: any) {
+            console.log(item)
+            this.items = this.items.filter((e) => e.id !== item.id)
+        }
+    },
+    persist: true
 })

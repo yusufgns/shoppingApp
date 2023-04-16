@@ -4,6 +4,7 @@ specifiers:
   '@vitejs/plugin-vue': ^4.1.0
   autoprefixer: ^10.4.14
   pinia: ^2.0.34
+  pinia-plugin-persistedstate: ^3.1.0
   postcss: ^8.4.21
   tailwindcss: ^3.3.1
   typescript: ^4.9.3
@@ -14,6 +15,7 @@ specifiers:
 
 dependencies:
   pinia: 2.0.34_hmuptsblhheur2tugfgucj7gc4
+  pinia-plugin-persistedstate: 3.1.0_pinia@2.0.34
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
 
@@ -838,6 +840,14 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /pinia-plugin-persistedstate/3.1.0_pinia@2.0.34:
+    resolution: {integrity: sha512-8UN+vYMEPBdgNLwceY08mi5olI0wkYaEb8b6hD6xW7SnBRuPydWHlEhZvUWgNb/ibuf4PvufpvtS+dmhYjJQOw==}
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: 2.0.34_hmuptsblhheur2tugfgucj7gc4
+    dev: false
 
   /pinia/2.0.34_hmuptsblhheur2tugfgucj7gc4:
     resolution: {integrity: sha512-cgOoGUiyqX0SSgX8XelK9+Ri4XA2/YyNtgjogwfzIx1g7iZTaZPxm7/bZYMCLU2qHRiHhxG7SuQO0eBacFNc2Q==}

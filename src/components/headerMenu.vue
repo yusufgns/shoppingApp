@@ -6,18 +6,17 @@ import { storeToRefs } from 'pinia'
 //component
 import basketItem from './headerComp/basketItem.vue'
 import popularCategories from './headerComp/popularCategories.vue'
+const store = cart()
 
+const popularCategoryList = ref(false)
 const basketItemOn = ref(false)
+
 const basketItemOnOff = () => {
     basketItemOn.value = !basketItemOn.value
 }
-const store = cart()
-
-
 const popularCategoriesOnOff = () => {
     popularCategoryList.value = !popularCategoryList.value
 }
-const popularCategoryList = ref(false)
 </script>
 
 <template>

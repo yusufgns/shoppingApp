@@ -5,7 +5,7 @@ import { storeToRefs } from 'pinia'
 
 const store = cart()
 const sotreActions = storeToRefs(store)
-const deneme = (product: object) => {
+const storeToBasket = (product: object) => {
     store.productToAdd(product)
 }
 </script>
@@ -38,7 +38,7 @@ const deneme = (product: object) => {
                         <p class="ml-[10px]">({{ product.starRate }})</p>
                     </div>
                 </div>
-                <div class="mt-[10px]" @click="deneme(product)">
+                <div class="mt-[10px]" @click="storeToBasket(product)">
                     <p class="border border-black font-semibold w-fit py-[5px] px-[18px] rounded-2xl">Add to Cart</p>
                 </div>
             </div>
