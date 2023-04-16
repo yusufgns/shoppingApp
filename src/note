@@ -1,0 +1,14 @@
+const categoryReloat = () => {
+    categoryMenu.value = !categoryMenu.value
+    const categoryIcon = document.querySelector('.categoryIcon');
+    categoryIcon.classList.toggle('rotate');
+}
+
+const basketReloat = () => {
+    basketMenu.value = !basketMenu.value
+}
+
+const removeItems = (item : number) => {
+    items.value = items.value.filter((itemE) => itemE.id !== item)
+    .map((itemE) => ({...itemE }))
+}

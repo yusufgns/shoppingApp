@@ -1,5 +1,13 @@
 <script setup lang="ts">
-import { products } from '../store/store'
+import { products, cart } from '../store/store'
+import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
+
+const store = cart()
+const sotreActions = storeToRefs(store)
+const deneme = (product: object) => {
+    store.productToAdd(product)
+}
 </script>
 
 <template>
@@ -30,7 +38,7 @@ import { products } from '../store/store'
                         <p class="ml-[10px]">({{ product.starRate }})</p>
                     </div>
                 </div>
-                <div class="mt-[10px]">
+                <div class="mt-[10px]" @click="deneme(product)">
                     <p class="border border-black font-semibold w-fit py-[5px] px-[18px] rounded-2xl">Add to Cart</p>
                 </div>
             </div>
@@ -44,7 +52,7 @@ import { products } from '../store/store'
     transition: ease-in-out 180ms;
 }
 
-.productList img{
+.productList img {
     transition: ease-out 180ms;
 }
 </style>
