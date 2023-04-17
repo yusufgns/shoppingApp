@@ -1,10 +1,10 @@
 # Prototype Market Application
 
+It is a small market study prepared as a prototype. As technology, vue.js, pinia, tailwindcss are used
 
-
-![shopping01](https://user-images.githubusercontent.com/99817309/232462650-c41e20c9-e518-4b8b-80d4-84ce00fa82cd.png)
-![shopping02](https://user-images.githubusercontent.com/99817309/232462652-7bcc47ad-7cf0-4c9b-b96d-3da2132d54e3.png)
-![shopping03](https://user-images.githubusercontent.com/99817309/232462653-5336b78a-7242-477d-9bcd-2cb09bf4b83e.png)
-![shopping04](https://user-images.githubusercontent.com/99817309/232462657-cf5062c8-f343-4b08-a5da-5db96644e89d.png)
-![shopping05](https://user-images.githubusercontent.com/99817309/232462660-999df90f-0ec3-4947-b4a6-7e74e9fbd29b.png)
-![shopping06](https://user-images.githubusercontent.com/99817309/232462663-e2e8c626-5943-4c3d-bd2c-e5b049afea86.png)
+![shopping02](https://user-images.githubusercontent.com/99817309/232462775-2bb67a84-8c00-497f-8347-dabc3b6d4eaa.png)
+![shopping01](https://user-images.githubusercontent.com/99817309/232462778-93103f4a-520f-4435-9ef5-1655dffea8f9.png)
+![shopping03](https://user-images.githubusercontent.com/99817309/232462782-958322cb-6b6b-42d3-9817-ec501b822c88.png)
+![shopping04](https://user-images.githubusercontent.com/99817309/232462783-771c9131-447f-422e-b5e8-f8176c94496c.png)
+![shopping06](https://user-images.githubusercontent.com/99817309/232462786-61614b88-386b-4cf3-91ab-a03eb8ae9a70.png)
+![shopping05](https://user-images.githubusercontent.com/99817309/232462787-2fc52caf-e8cf-407c-8843-5b4f98c5ea47.png)
