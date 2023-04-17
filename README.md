@@ -1,18 +1,10 @@
-# Vue 3 + TypeScript + Vite
+# Prototype Market Application
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+![shopping01](https://user-images.githubusercontent.com/99817309/232462650-c41e20c9-e518-4b8b-80d4-84ce00fa82cd.png)
+![shopping02](https://user-images.githubusercontent.com/99817309/232462652-7bcc47ad-7cf0-4c9b-b96d-3da2132d54e3.png)
+![shopping03](https://user-images.githubusercontent.com/99817309/232462653-5336b78a-7242-477d-9bcd-2cb09bf4b83e.png)
+![shopping04](https://user-images.githubusercontent.com/99817309/232462657-cf5062c8-f343-4b08-a5da-5db96644e89d.png)
+![shopping05](https://user-images.githubusercontent.com/99817309/232462660-999df90f-0ec3-4947-b4a6-7e74e9fbd29b.png)
+![shopping06](https://user-images.githubusercontent.com/99817309/232462663-e2e8c626-5943-4c3d-bd2c-e5b049afea86.png)
