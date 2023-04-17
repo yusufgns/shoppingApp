@@ -16,6 +16,8 @@ const basketItemOnOff = () => {
 }
 const popularCategoriesOnOff = () => {
     popularCategoryList.value = !popularCategoryList.value
+    const categoryIcon = document.querySelector('.categoryIcon');
+    categoryIcon.classList.toggle('rotate');
 }
 </script>
 
@@ -28,7 +30,8 @@ const popularCategoriesOnOff = () => {
         <div class="headerNav flex items-center justify-center">
             <span class="flex items-center justify-center relative" @click="popularCategoriesOnOff">
                 <router-link class="categoryNav" to="">Category</router-link>
-                <img :categoryClass="{ 'categoryIcon': 'true' }" class="categoryIcon w-[15px] h-[15px] ml-[5px]" src="../public/Arrow - Down 2.svg">
+                <img :categoryClass="{ 'categoryIcon': 'true' }" class="categoryIcon w-[15px] h-[15px] ml-[5px]"
+                    src="../public/Arrow - Down 2.svg">
                 <popular-categories v-if="popularCategoryList == true"></popular-categories>
             </span>
             <router-link class="ml-5" to="">Deals</router-link>
@@ -47,13 +50,13 @@ const popularCategoriesOnOff = () => {
                 <router-link to="">Account</router-link>
             </span>
 
-            <span>
+            <div class="relative headerCart">
                 <span class="flex" @click="basketItemOnOff">
                     <img class="mr-[10px]" src="../public/63eb3dec9b865e78d4ff6b8d_shopping-cart-add.png" alt="Cart">
                     <router-link to="">Basket</router-link>
                 </span>
                 <basketItem v-if="basketItemOn == true"></basketItem>
-            </span>
+            </div>
 
             <span class="menu">
                 <img src="../public/menu.svg" alt="menu">

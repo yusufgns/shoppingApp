@@ -1,6 +1,6 @@
 <template>
     <div
-        class="z-50 categoryDetails w-[695px] absolute p-[20px] px-[30px] left-0 bg-white bg- top-[47px] border-gray-100 border-[1px] rounded-[20px]">
+        class="z-50 categoryDetails w-[695px] absolute p-[20px] px-[30px] left-0 bg-white bg- top-[50px] border-gray-100 border-[1px] rounded-[20px]">
         <h1 class="pb-5 font-semibold">Popular Categories</h1>
         <div class="bg-gray-300 h-[1px] w-full"></div>
         <div class="pt-6 flex flex-wrap gap-[25px] items-center justify-center">

@@ -1,5 +1,5 @@
 <template>
-    <h1 class="categoryTitle font-bold text-[28px] mb-[5px] mt-[100px] px-[30px]">Shop Our Top Categories</h1>
+    <h1 class="categoryTitle font-bold text-[28px] mb-[5px] mt-[50px] px-[30px]">Shop Our Top Categories</h1>
     <div
         class="categoriesHover justify-center categoryList flex-wrap w-full mt-[30px] mb-[45px] flex max-w-[1310px] px-[30px] py-[15px] gap-[10px]">
 

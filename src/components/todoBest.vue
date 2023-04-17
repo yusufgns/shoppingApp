@@ -12,7 +12,7 @@ const storeToBasket = (product: object) => {
 
 <template>
     <h1 class="categoryTitle font-bold text-[28px] mb-[5px] mt-[100px] px-[30px]">Shop Our Top Categories</h1>
-    <div class="flex flex-wrap gap-[15px] justify-center mt-[50px] mb-[150px]">
+    <div class="flex flex-wrap gap-[15px] max-w-[1310px]  justify-center mt-[50px] mb-[150px]">
         <div class="productList" :key="product.id" v-for="product in products">
             <div class="w-[300px]">
                 <div class="flex items-center justify-center bg-[#F5F6F6] rounded-2xl">
@@ -21,7 +21,7 @@ const storeToBasket = (product: object) => {
                 <div class="mt-[10px] w-[300px]">
                     <div class="flex w-full justify-between font-bold px-[5px] text-[18px]">
                         <p>{{ product.name }}</p>
-                        <p>{{ product.price }}</p>
+                        <p>${{ product.price }}</p>
                     </div>
 
                     <div class="my-[5px] px-[5px] opacity-80 text-[14px] break-words">

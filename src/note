@@ -1,5 +1,4 @@
 const categoryReloat = () => {
-    categoryMenu.value = !categoryMenu.value
     const categoryIcon = document.querySelector('.categoryIcon');
     categoryIcon.classList.toggle('rotate');
 }
