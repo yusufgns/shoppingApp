@@ -17,7 +17,6 @@ const basketItemOnOff = () => {
 const popularCategoriesOnOff = () => {
     popularCategoryList.value = !popularCategoryList.value
     const categoryIcon = document.querySelector('.categoryIcon');
-    categoryIcon.classList.toggle('rotate');
 }
 </script>
 
