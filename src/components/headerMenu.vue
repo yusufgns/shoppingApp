@@ -16,7 +16,6 @@ const basketItemOnOff = () => {
 }
 const popularCategoriesOnOff = () => {
     popularCategoryList.value = !popularCategoryList.value
-    const categoryIcon = document.querySelector('.categoryIcon');
 }
 </script>
 
@@ -29,7 +28,7 @@ const popularCategoriesOnOff = () => {
         <div class="headerNav flex items-center justify-center">
             <span class="flex items-center justify-center relative" @click="popularCategoriesOnOff">
                 <router-link class="categoryNav" to="">Category</router-link>
-                <img :categoryClass="{ 'categoryIcon': 'true' }" class="categoryIcon w-[15px] h-[15px] ml-[5px]"
+                <img class="w-[15px] h-[15px] ml-[5px]"
                     src="../public/Arrow - Down 2.svg">
                 <popular-categories v-if="popularCategoryList == true"></popular-categories>
             </span>
@@ -68,11 +67,6 @@ const popularCategoriesOnOff = () => {
 <style scoped>
 .categoryItems:hover .categoryTitle {
     color: rgb(37, 99, 235);
-}
-
-.categoryIcon {
-    transform: rotate(180deg);
-    transition: all ease 250ms;
 }
 
 .rotate {
